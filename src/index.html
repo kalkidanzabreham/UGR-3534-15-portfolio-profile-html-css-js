@@ -4,66 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkidan Abreham</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></nav>
-        <nav><ul>
+        <nav id="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></nav>
+        <nav class="header-links"><ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="./services.html">Service</a></li>
             <li><a href="./contact.html">Contact</a></li>
-        </ul></nav>
+        </ul>
+        <a href="#" id="menu-toggle"><img src="./img/menu-bar.ico" alt="menu"></a>
+    </nav>
     </header>
 <!-- Hero Section -->
-    <section>
+    <section class="banner">
+        <div id="banner-img">
         <img src="./img/background-img.png" alt="banner image">
-        <div>
-            <h2>Kalkidan Abreham</h2>
-            <p>Software Engineer</p>
+        </div>
+        <div id="banner-content">
+            <h1>Kalkidan Abreham</h1>
+            <p>Full Stack Web Developer</p>
             <!-- Social Media Links -->
-            <div>
-                <a href="https://www.linkedin.com/in/kalkidan-abreham-50040b319/"><img src="./img/linkdin.png" alt=""></a>
-                <a href="https://github.com/kalkidanzabreham"><img src="./img/github.png" alt=""></a>
+            <div class="banner_links">
+                <a class="insta" href="https://www.linkedin.com/in/kalkidan-abreham-50040b319/"><img src="./img/linkdin.png" alt="linkedin"></a>
+                <a class="tg" href="//github.com/kalkidanzabreham"><img src="./img/github.png" alt="github"></a>
             </div>
         </div>
     </section>
     <!-- Recent Projects -->
-    <section>
-           <figure>
-                <img src="./img/project-1.png" alt="Netflix clone">
-                <figcaption>
-                    <div>NETFLIX CLONE</div>
-                    <div><a href="https://github.com/kalkidanzabreham/Netflix-Clone">View Code On Github</a></div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="./img/project-2.png" alt="Apple Full-Stack">
-                <figcaption>
-                    <div>APPLE Full-Stack</div>
-                    <div><a href="https://github.com/kalkidanzabreham/appleFullStack">View Code On Github</a></div>
-                </figcaption>
-                </figure>
+    <section id="recent-projects">
+        <div id="title">Recent Projects</div>
+        <div id="project-content">
+           <div class="project">
+                <a href="https://kalkidanzabreham.netlify.app/"><img src="./img/project-1.png" alt="Netflix clone"></a>
+            </div>
+            <div class="project">
+                <a href="https://glistening-lokum-1dadfd.netlify.app/"><img src="./img/project-2.png" alt="Apple Full-Stack"></a>
+            </div>
+                <div class="project">
+                    <a href="https://github.com/kalkidanzabreham/Evangadi-Menu.git"><img src="./img/project-3.png" alt="Evandai menu"></a>
+            </div>
+        </div>
+         
 
     </section>
     <footer>
-        <div>
+        <div id="footer-inner-conatiner">
+            <div id="footer-description">
             <h3>Kalkidan Abreham</h3>
             <p>Passionate web developer and aspiring software engineer.</p>
-            <div>
-                <a href="https://www.linkedin.com/in/kalkidan-abreham-50040b319/"><img src="./img/linkdin.png" alt=""></a>
-                <a href="https://github.com/kalkidanzabreham"><img src="./img/github.png" alt=""></a>
-                <a href="#"><img src="./img/telegram.png" alt=""></a>
-                <a href="#"><img src="./img/whatsapp.png" alt=""></a>
             </div>
-            <div>
+            <div id="media-links">
+                <a href="https://www.linkedin.com/in/kalkidan-abreham-50040b319/"><img src="./img/linkdin.png" alt="linkedin"></a>
+                <a href="https://github.com/kalkidanzabreham"><img src="./img/github.png" alt="github"></a>
+                <a href="https://t.me/Betsiitsii18"><img src="./img/telegram.png" alt="telegram"></a>
+                <a href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <div id="Copyright">
                 <span>&copy; Copyright</span>
                 <strong>Kalkidan Abreham</strong>
                 <span>All Rights Reserved</span>
             </div>
         </div>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

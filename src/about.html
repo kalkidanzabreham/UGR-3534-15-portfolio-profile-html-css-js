@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkidan Abreham</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
      <header>
-        <nav><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></nav>
-        <nav><ul>
+        <nav id="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></nav>
+        <nav class="header-links " id="dark-text"><ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="./services.html">Service</a></li>
             <li><a href="./contact.html">Contact</a></li>
-        </ul></nav>
+        </ul>
+        <a href="" id="menu-toggle"><img src="./img/menu-bar.ico" alt="menu"></a>
+    </nav>
     </header>
     <!-- About section -->
-    <section>
+    <section class="about">
         <div>
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <p>I am a Kalkidan Abreham and I am a third-year software engineering student with a passion for web development and programming. As I continue my studies, I am dedicated to expanding my knowledge and skills in various programming languages and technologies.</p>
         </div>
-        <div>
-            <div>
+        <div class="description">
+            <div class="profile-image">
                 <img src="./img/personalprofile.jpg" alt="">
             </div>
-            <div>
+            <div class="info">
                 <h2>Web Developer &amp; Software Engineer.</h2>
             <p class="fst-italic py-3">
             Currently, I am focusing on web development, where I am learning to create dynamic and responsive websites. My journey in software engineering has been exciting and filled with continuous learning, problem-solving, and innovation. I enjoy tackling complex challenges and finding creative solutions through code.
@@ -45,12 +48,12 @@
         </div>
     </section>
 <!--skills section -->
-<section>
+<section class="skills">
     <div>
         <h2>Skills</h2>
-        <p>Below, you'll find a breakdown of my proficiency in each area, represented as percentages to give you a clear picture of my expertise.
+        <p class="skills-description">Below, you'll find a breakdown of my proficiency in each area, represented as percentages to give you a clear picture of my expertise.
     </div>
-    <div>
+    <div class="skill-icons">
         <img src="./img/skill_icons/html_icon.png" alt="html icon">
         <img src="./img/skill_icons/css_icon.png" alt="css icon">
         <img src="./img/skill_icons/bootstrap-icon.jpeg" alt="bootsrap">
@@ -63,31 +66,34 @@
     </div>
 </section>
 <!-- CV -->
-<section>
+<section class="cv">
 <div>
     <h2>View my CV</h2>
-    <p>Explore my qualifications, experience, and achievements in detail by viewing my full CV below.</p>
+    <p class="skills-description">Explore my qualifications, experience, and achievements in detail by viewing my full CV below.</p>
 </div>
-<div><a href="https://drive.google.com/file/d/1hWcyw4xwefuooybWMdMLKBHiGtLNh-h7/view?usp=sharing" >
+<div class="cv-button" ><a href="https://drive.google.com/file/d/1hWcyw4xwefuooybWMdMLKBHiGtLNh-h7/view?usp=sharing" >
 Download CV  
 </a></div>
 </section>
  <footer>
-        <div>
+        <div id="footer-inner-conatiner">
+            <div id="footer-description">
             <h3>Kalkidan Abreham</h3>
             <p>Passionate web developer and aspiring software engineer.</p>
-            <div>
-                <a href="https://www.linkedin.com/in/kalkidan-abreham-50040b319/"><img src="./img/linkdin.png" alt=""></a>
-                <a href="https://github.com/kalkidanzabreham"><img src="./img/github.png" alt=""></a>
-                <a href="#"><img src="./img/telegram.png" alt=""></a>
-                <a href="#"><img src="./img/whatsapp.png" alt=""></a>
             </div>
-            <div>
+            <div id="media-links">
+                <a href="https://www.linkedin.com/in/kalkidan-abreham-50040b319/"><img src="./img/linkdin.png" alt="linkedin"></a>
+                <a href="https://github.com/kalkidanzabreham"><img src="./img/github.png" alt="github"></a>
+                <a href="https://t.me/Betsiitsii18"><img src="./img/telegram.png" alt="telegram"></a>
+                <a href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <div id="Copyright">
                 <span>&copy; Copyright</span>
                 <strong>Kalkidan Abreham</strong>
                 <span>All Rights Reserved</span>
             </div>
         </div>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>
